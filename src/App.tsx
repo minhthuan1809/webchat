@@ -1,9 +1,9 @@
-import Login from "./components/Login";
+import Routerdom from "./router/Routerdom";
 
 export default function App() {
   return (
     <div>
-      <Login />
+      <Routerdom />
     </div>
   );
 }

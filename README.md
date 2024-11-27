@@ -1,50 +1,53 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# cài đặt
 
-Currently, two official plugins are available:
+## 1. Install react-firebase-hooks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+# sử dụng để kết nối firebase
+npm install --save react-firebase-hooks
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 2. Install firebase
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+# sử dụng để kết nối firebase
+npm install --save firebase
+```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## 3. Install tailwindcss
+
+```bash
+# sử dụng css
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+## 4. Install react-router-dom
+
+```bash
+# sử dụng để chuyển đổi trang
+npm i react-router-dom
+```
+
+## 5. Install react-toastify
+
+```bash
+# sử dụng hiện thị thông báo
+npm i react-toastify
+```
+
+## 6. Install lucide-react
+
+```bash
+#  sử dụn icon
+npm install lucide-react
+```
+
+## 7. Install antd
+
+```bash
+# sử dụng để xử lý form
+ npm install antd --save
 ```
